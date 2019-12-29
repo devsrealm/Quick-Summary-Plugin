@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name:       Quick Summary
-Description:       A plugin that adds a meta box functionality to allow the usage of a summary or an excerpt in post pages
+Description:       A ClassicPress plugin that adds a meta box functionality to the post editor for a quick summary of a post.
 Plugin URI:        https://forums.classicpress.net/u/Horlaes
 Contributors:      Horlaes
 Author:            Horlaes

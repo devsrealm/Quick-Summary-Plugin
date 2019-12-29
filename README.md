@@ -1,6 +1,5 @@
 # Quick Summary Plugin
-  A ClassicPress plugin that adds a meta box functionality to allow the usage of a summary or an excerpt in post
-  
+A ClassicPress plugin that adds a meta box functionality to the post editor for a quick summary of a post.
 ## Installation
 1. Go to your Dashboard
 2. Hover over the *Plugin* section at the left hand side and select *Add New*
@@ -42,11 +41,11 @@ Then, add this:
         else {
           echo '';}
 
-If you want to customize th summary box in your post, you can swap the classes for your use cases, e.g you can change the `c-summary` class to something different and style it the way it fits your use case.
+If you want to customize the summary box in your post, you can swap the classes for your use cases, e.g you can change the `c-summary` class to something different and style it the way it fits your use case.
 
 == Screenshots ==
 
-![Quick Summary Image](https://pasteboard.co/INw13ti.png)
+![Quick Summary Image](https://raw.githubusercontent.com/Horlaes/Quick-Summary-Plugin/master/screenshot/Quick-Summary.png)
 
 == Changelog ==
 V1.0 - Inital Release
