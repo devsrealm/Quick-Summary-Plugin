@@ -9,8 +9,7 @@
 5. When you are done uploading, Activate and Follow The Next Step Below
 
 ### Requirements
-WP Rig requires the following dependencies. Full installation instructions are provided at their respective websites.
+Requires at least Classicpress V1
 
-- [PHP](http://php.net/) 7.0
-- [npm](https://www.npmjs.com/)
-- [Composer](https://getcomposer.org/) (installed globally)
+###Usage
+
