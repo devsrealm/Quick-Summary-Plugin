@@ -42,7 +42,7 @@ Then, add this:
         else {
           echo '';}
 
-If you want to customize th summary box in your post, you can swap the classes for your use cases, e.g you can change the *c-summary* class to something different and style it the way it fits your use case.
+If you want to customize th summary box in your post, you can swap the classes for your use cases, e.g you can change the `c-summary` class to something different and style it the way it fits your use case.
 
 == Screenshots ==
 
