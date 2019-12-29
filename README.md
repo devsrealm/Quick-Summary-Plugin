@@ -43,10 +43,14 @@ Then, add this:
 
 If you want to customize the summary box in your post, you can swap the classes for your use cases, e.g you can change the `c-summary` class to something different and style it the way it fits your use case.
 
-== Screenshots ==
+### Screenshots
+
 Post Editor:
+
 ![Quick Summary Image](https://raw.githubusercontent.com/Horlaes/Quick-Summary-Plugin/master/screenshot/Quick-Summary-2.png)
+
 Result:
+
 ![Quick Summary Image](https://raw.githubusercontent.com/Horlaes/Quick-Summary-Plugin/master/screenshot/Quick-Summary.png)
 
 == Changelog ==
