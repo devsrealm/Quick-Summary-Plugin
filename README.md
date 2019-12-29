@@ -46,7 +46,7 @@ If you want to customize th summary box in your post, you can swap the classes f
 
 == Screenshots ==
 
-![Quick Summary Image](https://pasteboard.co/INw13ti.png)
+![Quick Summary Image](https://raw.githubusercontent.com/Horlaes/Quick-Summary-Plugin/master/screenshot/Quick-Summary.png)
 
 == Changelog ==
 V1.0 - Inital Release
