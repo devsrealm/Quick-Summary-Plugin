@@ -26,16 +26,16 @@ function quick_summary_meta_box_fields( $post ) {
 		
 		?>	
 		<p>
-				<label for="quicksummary_title">Title</label><br />
+				<label for="quicksummary_title"><?php _e( 'Summary Title', 'quicksummary' ); ?></label><br />
 				<input type="text" class="all-options" name="quicksummary_title" id="quicksummary_title" value="<?php echo esc_attr( $title ); ?>" />
-				<span class="description">Title you wanna label, e.g Quick Summary</span>
+				<span class="description"><?php _e( 'Title you wanna label, e.g Quick Summary', 'quicksummary' ); ?></span>
 		</p>
 		
 		<p>
-				<label for="quicksummary_textarea">Textarea</label><br />
+				<label for="quicksummary_textarea"><?php _e( 'Summary Content', 'quicksummary' ); ?></label><br />
 				<textarea name="quicksummary_textarea" id="quicksummary_textarea" cols="60" rows="4" style="width:97%" ><?php echo esc_attr( $textarea ); ?></textarea> <br />
 				
-				<span class="description">The excerpt or summary of the post</span>
+				<span class="description"><?php _e( 'The excerpt or summary of the post', 'quicksummary' ); ?></span>
 		</p>
 
 		<?php 

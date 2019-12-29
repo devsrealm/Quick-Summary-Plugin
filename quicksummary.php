@@ -8,12 +8,12 @@ Author:            Horlaes
 Author URI:        https://github.com/horlaes/
 Donate link:       https://devsrealm.com
 Tags:              metabox, quote field
-Version:           1.0
-Stable tag:        1.0
-Requires at least: 3.5
-Tested up to:      4.9
+Version:           1.0.0
+Stable tag:        1.0.0
+Requires at least: 1.0.0
+Tested up to:      1.1.2
 Text Domain:       quicksummary
-Domain Path:       /languages
+Domain Path:       /languages/
 License:           GPL v2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -38,13 +38,32 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 }
 
-// if admin area
-if ( is_admin() ) {
+/* Set plugin version constant. */
+define( 'QUICK_SUMMARY_VERSION', '1.0.0' );
 
-    // include dependencies
-    require_once plugin_dir_path( __FILE__ ) . 'includes/summary-fields.php';
+define( 'QUICK_SUMMARY__FILE__', __FILE__ );
+define( 'QUICK_SUMMARY_PLUGIN_BASE', plugin_basename( QUICK_SUMMARY__FILE__ ) );
+define( 'QUICK_SUMMARY_URL', plugins_url( '/', QUICK_SUMMARY__FILE__ ) );
+define( 'QUICK_SUMMARY_PATH', plugin_dir_path( QUICK_SUMMARY__FILE__ ) );
+define( 'QUICK_SUMMARY_ADMIN_PATH', QUICK_SUMMARY_PATH . 'admin/' );
+define( 'QUICK_SUMMARY_INCLUDES_PATH', QUICK_SUMMARY_PATH . 'includes/' );
 
+/**
+ * Load plugins file
+ * @since 1.0.0
+ */
+function quick_summary_plugins_loaded(){
+
+	/* Load Text Domain (Language Translation) */
+	load_plugin_textdomain( 'quicksummary', false, QUICK_SUMMARY_PLUGIN_BASE . '/languages/' );
+	
+	// if admin area
+	if ( is_admin() ) {
+		// include dependencies
+		require_once QUICK_SUMMARY_INCLUDES_PATH . 'summary-fields.php';
+	}
 }
+add_action( 'plugins_loaded', 'quick_summary_plugins_loaded' );
 
 // enqueue public style
 function quicksummary_enqueue_style_public() {
