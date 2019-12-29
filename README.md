@@ -1,6 +1,6 @@
 # Quick Summary Plugin
- A ClassicPress plugin that adds a meta box functionality to the post editor for a quick summary about the topic of a given post.
-  
+A ClassicPress plugin that adds a meta box functionality to the post editor for a quick summary about a post.
+
 ## Installation
 1. Go to your Dashboard
 2. Hover over the *Plugin* section at the left hand side and select *Add New*
