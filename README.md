@@ -15,16 +15,27 @@ Goto any template part you would like to display the value of the quick summary 
 
 Then, add this:
 
-<div class="video-duration">
-        <?php
-        $video_duration   = get_post_meta( $post->ID, 'videolength_duration', true );
-        if ( is_singular( get_post_type() ) && '' !== $video_duration) {
-           ?> <span> <?php echo esc_html( $video_duration ); ?> </span> <?php
+```
+        $summary_title      = get_post_meta( $post->ID, 'quicksummary_title', true );
+        $summary_textarea   = get_post_meta( $post->ID, 'quicksummary_textarea', true );
+        if ( is_singular( get_post_type() ) && '' !== $summary_title && '' !== $summary_textarea ) {
+          ?>
+        <div class="c-summary">
+            <p>
+          <?php echo esc_html( $summary_title ); ?>
+            </p>
+            <section aria-label="quick summary" class="article__summary">
+              <p>
+            <?php echo esc_html( $summary_textarea ); ?>
+              </p>
+            </section>
+          </div>
+          <?php
           } 
         else {
           echo '';}
-        ?>
-</div>
+```
+If you want to customize the summary box in your post, you can swap the classes for your use cases, e.g you can change the `c-summary` class to something different and style it the way it fits your use case.
 
 ### Screenshots
 
